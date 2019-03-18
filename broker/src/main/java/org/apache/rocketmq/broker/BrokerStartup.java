@@ -55,6 +55,7 @@ public class BrokerStartup {
     public static InternalLogger log;
 
     public static void main(String[] args) {
+        System.setProperty("rocketmq.home.dir", "F:\\github\\rocketmq\\distribution");
         start(createBrokerController(args));
     }
 
